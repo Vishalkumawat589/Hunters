@@ -65,7 +65,7 @@
             margin-bottom: 20px;
         }
         
-        /* --- Hero Section Specifics (Customized from Video Info) --- */
+        /* --- Hero Section Specifics --- */
         .hero-section {
             background-color: #333333; 
             color: white;
@@ -87,7 +87,7 @@
             font-weight: bold;
         }
 
-        /* --- Stats Grid --- */
+        /* --- Clan Stats & Recruitment Details --- */
         .data-grid {
             display: flex;
             justify-content: space-around;
@@ -128,25 +128,36 @@
         .stat-detail-grid strong {
             color: #E67E22;
         }
-
-
-        /* --- Rules Section --- */
-        .rules-section ul {
-            list-style: none;
-            padding: 0;
-            max-width: 600px;
-            margin: 0 auto;
+        
+        /* --- Member Roster Table --- */
+        .roster-table {
+            width: 100%;
+            max-width: 800px;
+            margin: 20px auto;
+            border-collapse: collapse;
+            font-size: 0.95em;
             text-align: left;
         }
-
-        .rules-section li {
-            background-color: #212121;
-            padding: 15px;
-            margin-bottom: 10px;
-            border-left: 5px solid #E67E22;
-            border-radius: 4px;
+        .roster-table th, .roster-table td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #2c3e50;
         }
-
+        .roster-table th {
+            background-color: #212121;
+            color: #E67E22;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .roster-table tr:nth-child(even) {
+            background-color: #1f1f1f;
+        }
+        .roster-table tr:hover {
+            background-color: #2c2c2c;
+        }
+        .role-leader { color: #C0392B; font-weight: bold; }
+        .role-co-leader { color: #E67E22; }
+        .role-elder { color: #7f8c8d; }
+        
         /* --- Footer --- */
         footer {
             text-align: center;
@@ -163,6 +174,7 @@
         <nav>
             <a href="#about">About</a>
             <a href="#stats">Stats</a>
+            <a href="#roster">Roster</a>
             <a href="#wars">War Log</a>
             <a href="#join">Join Us</a>
         </nav>
@@ -199,6 +211,42 @@
             </div>
             
         </section>
+        
+        <section id="roster" class="roster-section">
+            <h3>Clan Roster (Top 20 Members)</h3>
+            <table class="roster-table">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Name</th>
+                        <th>Role</th>
+                        <th>Trophies</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>1</td><td>NightHlady</td><td class="role-elder">Elder</td><td>4526</td></tr>
+                    <tr><td>2</td><td>HUNTER</td><td class="role-elder">Elder</td><td>4163</td></tr>
+                    <tr><td>3</td><td>GM Slayer</td><td class="role-co-leader">Co-leader</td><td>361</td></tr>
+                    <tr><td>4</td><td>Man of power</td><td class="role-co-leader">Co-leader</td><td>287</td></tr>
+                    <tr><td>5</td><td>Westheimer</td><td class="role-co-leader">Co-leader</td><td>286</td></tr>
+                    <tr><td>6</td><td>Ultrabomber</td><td class="role-elder">Elder</td><td>170</td></tr>
+                    <tr><td>7</td><td>JUNE</td><td class="role-leader">Leader</td><td>156</td></tr>
+                    <tr><td>8</td><td>Egen2</td><td class="role-elder">Elder</td><td>112</td></tr>
+                    <tr><td>9</td><td>Tenma</td><td class="role-co-leader">Co-leader</td><td>80</td></tr>
+                    <tr><td>10</td><td>Rodzkiem_0217</td><td class="role-co-leader">Co-leader</td><td>69</td></tr>
+                    <tr><td>11</td><td>Egen</td><td class="role-co-leader">Co-leader</td><td>51</td></tr>
+                    <tr><td>12</td><td>HEAD HUNTER</td><td class="role-co-leader">Co-leader</td><td>50</td></tr>
+                    <tr><td>13</td><td>Ambika Thakur</td><td class="role-elder">Elder</td><td>28</td></tr>
+                    <tr><td>14</td><td>iCarBON</td><td class="role-elder">Elder</td><td>8</td></tr>
+                    <tr><td>15</td><td>Kenzo84god</td><td class="role-elder">Elder</td><td>0</td></tr>
+                    <tr><td>16</td><td>Mohit</td><td class="role-co-leader">Co-leader</td><td>0</td></tr>
+                    <tr><td>17</td><td>Jkampai05</td><td class="role-elder">Elder</td><td>0</td></tr>
+                    <tr><td>18</td><td>Jaat</td><td class="role-co-leader">Co-leader</td><td>0</td></tr>
+                    <tr><td>19</td><td>Teja Nama</td><td class="role-co-leader">Co-leader</td><td>0</td></tr>
+                    <tr><td>20</td><td>Tubov</td><td class="role-elder">Elder</td><td>0</td></tr>
+                </tbody>
+            </table>
+        </section>
 
         <section id="wars" class="rules-section">
             <h3>Clan War League History (Static Snapshot)</h3>
@@ -216,7 +264,6 @@
                     <strong style="color: #C0392B;">Classic War Record:</strong> Wins: 6 | Losses: 19 | Draws: 0 (Total: 25)
                 </li>
             </ul>
-            <p style="margin-top: 20px; color: #7f8c8d;">*This data is static and based on the last recorded clip (War Log History).</p>
         </section>
 
         <section id="join" class="join-section">
@@ -224,13 +271,13 @@
             <p>Our requirement is Town Hall 14. Search for us in-game to request an invite.</p>
             <div class="contact-info">
                 <p>In-Game Tag: **#2GQCCVLYJ**</p>
-                <p>Current Members: 20/50</p>
+                <p>Current Members: 20/50 (Based on video data)</p>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 Hunters Clan. All rights reserved. | Static Site Data from Clan Tag #2GQCCVLYJ</p>
+        <p>&copy; 2025 Hunters Clan. All rights reserved. | Static Data from Clan Tag #2GQCCVLYJ</p>
     </footer>
 </body>
 </html>
