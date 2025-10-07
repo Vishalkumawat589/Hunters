@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hunters - Official Clan Website</title>
+    <title>Hunters - Official Clan Website | Non Stop War</title>
     
     <style>
         /* --- Global Styles --- */
@@ -52,9 +52,9 @@
         }
 
         section {
-            padding: 60px 0;
-            margin-bottom: 40px;
-            background-color: #1c1c1c; /* Slightly lighter inner section */
+            padding: 40px 20px;
+            margin-bottom: 30px;
+            background-color: #1c1c1c; 
             border-radius: 8px;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
             text-align: center;
@@ -65,29 +65,26 @@
             margin-bottom: 20px;
         }
         
-        /* --- Hero Section Specifics --- */
+        /* --- Hero Section Specifics (Customized from Video Info) --- */
         .hero-section {
-            /* Note: Cannot link external image, using solid color */
             background-color: #333333; 
             color: white;
             padding: 100px 0;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
         }
-
-        .cta-button {
-            background-color: #C0392B;
-            color: white;
-            border: none;
-            padding: 12px 30px;
-            font-size: 1.1em;
-            cursor: pointer;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-            margin-top: 20px;
+        .hero-section h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
         }
-
-        .cta-button:hover {
-            background-color: #E67E22;
+        .hero-section p {
+            font-size: 1.2em;
+            margin-bottom: 5px;
+            color: #ddd;
+        }
+        .tag {
+            font-size: 1.5em;
+            color: #C0392B;
+            font-weight: bold;
         }
 
         /* --- Stats Grid --- */
@@ -99,7 +96,7 @@
         }
 
         .stat-box {
-            background-color: #2c3e50; /* A dark blue/grey for stats */
+            background-color: #2c3e50; 
             padding: 20px;
             margin: 10px;
             border-radius: 5px;
@@ -115,12 +112,23 @@
             color: #C0392B;
             margin-top: 5px;
         }
-
-        .api-note {
-            font-style: italic;
-            color: #7f8c8d;
-            margin-top: 20px;
+        .stat-detail-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            text-align: left;
+            max-width: 600px;
+            margin: 20px auto;
+            gap: 15px;
         }
+        .stat-detail-grid div {
+            padding: 10px;
+            background-color: #212121;
+            border-radius: 4px;
+        }
+        .stat-detail-grid strong {
+            color: #E67E22;
+        }
+
 
         /* --- Rules Section --- */
         .rules-section ul {
@@ -155,108 +163,74 @@
         <nav>
             <a href="#about">About</a>
             <a href="#stats">Stats</a>
-            <a href="#rules">Rules</a>
+            <a href="#wars">War Log</a>
             <a href="#join">Join Us</a>
         </nav>
     </header>
 
     <main>
         <section id="hero" class="hero-section">
-            <h2>The Hunt is On. Always.</h2>
-            <p>A competitive, elite war clan focused on 3-star attacks and constant progression.</p>
-            <a href="#join"><button class="cta-button">Join the Hunt</button></a>
+            <p class="tag">#2GQCCVLYJ</p>
+            <h1>Hunters: Non Stop War</h1>
+            <p>We are Hunters. Every member contributes, every trophy is met, and every trophy is shared. We hunt as one, we conquer as one.</p>
+            <p>— JUNE, Leader</p>
         </section>
 
         <section id="stats" class="stats-section">
-            <h3>Live Clan Performance</h3>
+            <h3>Clan Summary</h3>
             <div id="clan-data" class="data-grid">
-                <div class="stat-box">Clan Level: <span id="clan-level">...</span></div>
-                <div class="stat-box">Total Trophies: <span id="clan-trophies">...</span></div>
-                <div class="stat-box">War Wins: <span id="war-wins">...</span></div>
-                <div class="stat-box">CWL League: <span id="cwl-league">...</span></div>
+                <div class="stat-box">Clan Level: <span>6</span></div>
+                <div class="stat-box">War Win Streak: <span>0</span></div>
+                <div class="stat-box">Capital Hall Level: <span>5</span></div>
+                <div class="stat-box">War Wins (Total): <span>6</span></div>
             </div>
-            <p class="api-note">Stats updated live via Supercell API (Clan Tag: **#YOURCLANTAG**)</p>
+
+            <hr style="margin: 40px 0; border-color: #2c3e50;">
+
+            <h3>Recruitment & Details</h3>
+            <div class="stat-detail-grid">
+                <div><strong>Clan Location:</strong> India</div>
+                <div><strong>Language:</strong> English</div>
+                <div><strong>Chat Type:</strong> Closed</div>
+                <div><strong>War Frequency:</strong> Always</div>
+                <div><strong>Required League:</strong> Witch III</div>
+                <div><strong>Required Builder Base:</strong> Wood V</div>
+                <div><strong>Required Town Hall:</strong> 14</div>
+            </div>
+            
         </section>
 
-        <section id="rules" class="rules-section">
-            <h3>Clan Rules & Expectations</h3>
+        <section id="wars" class="rules-section">
+            <h3>Clan War League History (Static Snapshot)</h3>
             <ul>
-                <li>**War:** Must use both attacks. Opt out if heroes are upgrading.</li>
-                <li>**Donations:** Donate what is requested. 1:2 ratio is ideal.</li>
-                <li>**CWL:** Follow all instructions from Leadership.</li>
-                <li>**Capital Raids:** Use all 6 attacks every weekend.</li>
+                <li style="border-left-color: gold;">
+                    <strong>Current League: Gold League I</strong>
+                </li>
+                <li>
+                    <strong>September Season:</strong> 4th Place | Stars: 240 | Destruction: 7295
+                </li>
+                 <li>
+                    <strong>August Season:</strong> 5th Place | Stars: 182 | Destruction: 6123
+                </li>
+                <li style="border-left-color: #C0392B;">
+                    <strong style="color: #C0392B;">Classic War Record:</strong> Wins: 6 | Losses: 19 | Draws: 0 (Total: 25)
+                </li>
             </ul>
+            <p style="margin-top: 20px; color: #7f8c8d;">*This data is static and based on the last recorded clip (War Log History).</p>
         </section>
 
         <section id="join" class="join-section">
             <h3>Ready to Join the Pack?</h3>
-            <p>Search for us in-game or contact a Leader on Discord.</p>
+            <p>Our requirement is Town Hall 14. Search for us in-game to request an invite.</p>
             <div class="contact-info">
-                <p>In-Game Tag: **#YOURCLANTAG**</p>
-                <p>Discord: discord.gg/HuntersClan (Link Placeholder)</p>
+                <p>In-Game Tag: **#2GQCCVLYJ**</p>
+                <p>Current Members: 20/50</p>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 Hunters Clan. All rights reserved. | Built in One File 💾</p>
+        <p>&copy; 2025 Hunters Clan. All rights reserved. | Static Site Data from Clan Tag #2GQCCVLYJ</p>
     </footer>
-
-    <script>
-        // *** IMPORTANT: You must replace these values ***
-        // --------------------------------------------------------------------------------------------------------------------------------------------------------
-        const CLAN_TAG = 'YOURCLANTAG'; // Example: '2PQLQ2890' (without the #)
-        const API_KEY = 'YOUR_API_KEY'; // Get key from Supercell Developer site (https://developer.clashofclans.com/)
-        // NOTE: The Clash of Clans API often requires a backend server to proxy requests due to API key security and Cross-Origin Resource Sharing (CORS) policies.
-        // This direct client-side fetch might fail if hosted on a regular static host. It's best used with a backend proxy.
-        // --------------------------------------------------------------------------------------------------------------------------------------------------------
-        
-        const CLAN_ID = `%23${CLAN_TAG}`; // URL-encoded tag
-
-        async function fetchClanData() {
-            const url = `https://api.clashofclans.com/v1/clans/${CLAN_ID}`;
-
-            try {
-                const response = await fetch(url, {
-                    method: 'GET',
-                    headers: {
-                        'Authorization': `Bearer ${API_KEY}`, 
-                        'Accept': 'application/json'
-                    }
-                });
-
-                if (!response.ok) {
-                    throw new Error(`HTTP error! Status: ${response.status}. Check API Key and authorized IP address.`);
-                }
-
-                const data = await response.json();
-                
-                // --- Update the HTML with the live data ---
-                document.getElementById('clan-level').textContent = data.clanLevel || 'N/A';
-                document.getElementById('clan-trophies').textContent = data.clanPoints ? data.clanPoints.toLocaleString() : 'N/A';
-                document.getElementById('war-wins').textContent = data.warWins || 'N/A';
-                document.getElementById('cwl-league').textContent = data.warLeague ? data.warLeague.name : 'N/A';
-                
-            } catch (error) {
-                console.error('Could not fetch clan data:', error);
-                document.getElementById('clan-data').innerHTML = `
-                    <p style="color: red; text-align: center; grid-column: 1 / -1;">
-                        Error loading live stats. See console for details. **API requires a Backend Proxy or whitelisted IP.**
-                    </p>
-                `;
-            }
-        }
-
-        // Run the function if configured
-        if (CLAN_TAG && API_KEY && CLAN_TAG !== 'YOURCLANTAG') {
-            fetchClanData();
-        } else {
-             document.getElementById('clan-data').innerHTML = `
-                <p style="color: #E67E22; text-align: center; grid-column: 1 / -1;">
-                    ⚠️ Configuration Required: Update CLAN_TAG and API_KEY in the script section to activate live stats.
-                </p>
-            `;
-        }
-    </script>
 </body>
 </html>
