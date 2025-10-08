@@ -8,11 +8,11 @@
     <style>
         /* --- Color Palette --- */
         :root {
-            --color-primary-dark: #121212;      
-            --color-secondary-dark: #1c1c1c;    
-            --color-accent-red: #C0392B;        
-            --color-accent-orange: #E67E22;     
-            --color-vibrant-teal: #1ABC9C;      
+            --color-primary-dark: #121212;      /* Main Background */
+            --color-secondary-dark: #1c1c1c;    /* Section Background */
+            --color-accent-red: #C0392B;        /* Hunter Red/Aggression */
+            --color-accent-orange: #E67E22;     /* Gold/Highlight */
+            --color-vibrant-teal: #1ABC9C;      /* New Vibrant Accent */
             --color-text-light: #E0E0E0;
             --color-text-subtle: #7f8c8d;
         }
@@ -229,7 +229,7 @@
             background-color: #34495e;
             padding: 15px;
             border-radius: 10px;
-            box-shadow: 0 0 20px rgba(27, 188, 156, 0.3); /* Teal Glow */
+            box-shadow: 0 0 20px rgba(27, 188, 156, 0.3);
         }
         .magic-item-box img {
             width: 100%;
@@ -245,6 +245,15 @@
             color: var(--color-text-subtle);
             font-size: 0.9em;
             margin-top: 30px;
+        }
+        /* Style for the counter to center it nicely */
+        #visitor-counter-container {
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top: 1px dashed #333;
+            width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
         }
     </style>
 </head>
@@ -276,7 +285,7 @@
             <div class="magic-item-box">
                 <img src="4.jpg" alt="QR Code for Builder and Power Potion">
                 <p style="color: var(--color-accent-orange); font-weight: bold; margin-top: 15px;">
-                    Scan the large code above to claim your 1x Builder Potion and 1x Power Potion.
+                    Scan the code above to claim your 1x Builder Potion and 1x Power Potion.
                 </p>
             </div>
             <p style="margin-top: 15px; color: var(--color-text-subtle);">
@@ -409,6 +418,12 @@
 
     <footer>
         <p>&copy; 2025 Hunters Clan. All rights reserved. | Static Data from Clan Tag #2GQCCVLYJ</p>
+        
+        <div id="visitor-counter-container">
+            <a href='http://www.freevisitorcounters.com'>on freevisitorcounters.com</a> 
+            <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=ec0282ca189b18338e3e379d62a673f6eb2a7e9d'></script>
+            <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/1403656/t/6"></script>
+        </div>
     </footer>
 </body>
 </html>
